@@ -1,5 +1,5 @@
 # jest-101
-Let's go with TDD in Front End
+Let's go with TDD in Front End. Most of the test cases come from the book [Test-Driven Development with React](https://link.springer.com/book/10.1007/978-1-4842-6972-5).
 
 ## Setup
 ``` shell

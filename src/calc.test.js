@@ -12,4 +12,25 @@ describe('calculator', () => {
         expect('Hello Qilin').toEqual('Hello Qilin')
         expect('Hello Qilin').toBe('Hello Qilin')
     })
+
+    it('match object', () => {
+        const user = {
+            name: 'Qilin',
+            address: 'One City'
+        }
+
+        expect(user.name).toBeDefined()
+        expect(user.age).not.toBeDefined()
+    })
+
+    it('string contains', () => {
+        const givenName = expect.stringContaining('Qilin')
+        expect('Qilin Lou').toEqual(givenName)
+    })
+
+    it('array', () => {
+        const users = ['Qilin', 'Juntao', 'Alex']
+        const confirmedUserSet = expect.arrayContaining(['Qilin', 'Juntao'])
+        expect(users).toEqual(confirmedUserSet)
+    })
 })

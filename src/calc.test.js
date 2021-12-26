@@ -13,6 +13,7 @@ describe('addition', () => {
         expect(result).toEqual(6)
     })
 
+
     it('returns 7 when adding 3 and 4', () => {
         const a = 3, b = 4
         const result = add(a, b)
